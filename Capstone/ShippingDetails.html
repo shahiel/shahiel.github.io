@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shipping</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="scripts/Earthly.js"></script>
+
+<link rel="stylesheet" href="Earthlystyles.css">
+</head>
+<body>
+	<!--Nav and head-->
+    <div class="top-nav-bar">
+        <div class="search-box">
+                <i class="fas fa-bars" id="menu-btn" onclick="openmenu()"></i>
+                <i class="fas fa-times" id="close-btn" onclick="closemenu()"></i>
+                <a href="Index.html"><img src="images/logo.png" class="logo"></a> 
+            <input type="text" class="form-control">
+            <span class="input-group-text"><i class="fas fa-search"></i>
+            </span>
+		</div>
+	
+        <div class="menu-bar">
+            <ul>
+                <li><a href="Cart.html"><i class="fas fa-shopping-basket"></i>cart</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log in</a></li>
+            </ul>
+        </div>
+    </div>
+
+ 	<!--Side nav-->
+    <section class="header">
+        <div class="side-menu" id="side-menu">
+            <ul>
+                <li><a href="Index.html">Home<i class="fas fa-angle-right"></i></a>
+                </li>
+                <li><a href="Index.html#About">About Us <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="Products.html">Products <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="Cart.html">Cart<i class="fas fa-angle-right"></i></a></li>
+                <li><a href="ShippingDetails.html">Shipping<i class="fas fa-angle-right"></i></a></li>
+				<li>Log In / Register <i class="fas fa-angle-right"></i></li>
+				<li><a href="ContactUs.html">Contact Us<i class="fas fa-angle-right"></i></li></a>
+            </ul>
+            
+        </div>
+
+  
+    </section>
+  <!--Side nav ends-->
+  <section>
+            <!---daily orders-->
+            <div class="wrapper">
+                    <div class="counter col_fourth">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h2 class="timer count-title count-number" data-to="80" data-speed="2000"></h2>
+                            <p class="count-text ">Daily Orders</p>
+                          </div>
+                        </div>
+  </section>
+<!----------------Shipping Form----------------->
+<div class="container shadow p-3 mb-5 bg-white rounded contactform" style="width: 600px;">
+
+        <h1>Shipping Details</h1>
+      <form class="form-horizontal">
+           <div class="form-group" style="width: 500px;">
+              <label for="Email">Email Address</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group" style="width: 500px;">
+              <label for="name">Name</label>
+              <input type="name" class="form-control" placeholder="Name">
+          </div>
+          <div class="form-group" style="width: 500px;">
+              <label for="number">Password</label>
+              <input type="number" class="form-control" placeholder="Password">
+          </div>
+          <div class="form-group" style="width: 500px;">
+              <label for="shippingtype">Shipping Methods</label><br>
+              <div class="ship">
+             <a onclick="myFunction()" class="add-to-cart" href="#" data-name="Standard" data-price="80"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fas fa-truck"></i></button>Standard</a> <br>
+             <a onclick="myFunction()" class="add-to-cart" href="#" data-name="SameDay" data-price="100"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fas fa-shipping-fast "></i></button>SameDay</a> <br>
+             <a onclick="myFunction()" class="add-to-cart" href="#" data-name="Collection" data-price="0"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fas fa-store-alt "></i></button>Collection</a> <br>
+           </div>
+            </div>
+                  <div class="form-group" style="width: 500px;">
+              <label for="number">Street Name</label>
+              <input type="number" class="form-control" placeholder="Street Name">
+          </div>
+                  <div class="form-group" style="width: 500px;">
+              <label for="number">Surburb</label>
+              <input type="number" class="form-control" placeholder="Surburb">
+          </div>
+                  <div class="form-group" style="width: 500px;">
+              <label for="number">City/Town</label>
+              <input type="number" class="form-control" placeholder="City/Town">
+          </div>
+          <div class="form-group" style="width: 500px;">
+              <label for="subject">Comment</label>
+      <textarea type="text" class="form-control" id="Address" placeholder="Eg 'Ask for Jane'..."></textarea>
+          </div>
+           <div class="form-group form-check">
+              <label>
+              <input type="checkbox" class="form-check-input" id="Newsletter">
+              Newsletter</label>
+          </div>
+              <!--button-->
+              <div>
+              <button type="submit" class="btn btn-primary" style="padding:1em;">Submit</button>
+          </div>
+      </form>
+      <p style="color: red; text-align: center;font-size: 2em;">We suggest <a href="http://tcgweb16931.pperfect.com/pponline/login.php">Courier Guy</a> as our secondary courier service should you not want to use our courier.</p>
+
+      </div>
+
+<!----footer-->
+<section class="footer">
+    <div class="container tex-center">
+        <div class="row">
+            <div class="col-md-3">
+                <h1>Useful Links</h1>
+                <p>Privacy Policy</p>
+                <p>Terms of use</p>
+                <p>Return Policy</p>
+                <p>Discount Coupons</p>
+            </div>
+            <div class="col-md-3">
+                    <h1>Company</h1>
+                    <a href="Index.html#About"><p>About Us</p></a>
+                    <a href="ContactUs.html"><p>Contact Us</p></a>
+                    <p>Careers</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-md-3">
+						<h1>Follow Us</h1>
+						<ul>
+					<p><a href="#" class="fa fa-facebook"></a></p>
+					<p><a href="#" class="fa fa-twitter"></a></p>
+					<p><a href="www.instagram.com" class="fa fa-instagram"></a></p>
+					</ul>
+                    </div>
+                    <div class="col-md-3 footer-image">
+                        <h1>Download The App</h1>
+                        <img src="images/app.png">
+                    </div>
+        </div>
+        <hr>
+        <p class="copyright">Made By Shahiel <i class="far fa-copyright"></i></p>
+
+    </div>
+</section>
+    <script>
+        function openmenu(){
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-menu").style.display="none";
+            document.getElementById("close-menu").style.display="block";
+        }
+        function closemenu(){
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-menu").style.display="block";
+            document.getElementById("close-menu").style.display="none";
+        }
+    </script>
+
+</body>
+</html>
