@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<script type="text/javascript" src="scripts/Earthly.js"></script>
+<link rel="stylesheet" href="/path/to/bootstrap.min.css">
+<script src="/path/to/jquery.min.js"></script>
+<script src="/path/to/bootstrap.min.js"></script>
+<script src="js/jquery.mycart.js"></script>
+<script type="text/javascript" src="scripts/Main.js"></script>
+
+<link rel="stylesheet" href="Earthlystyles.css">
+</head>
+<body class="products">
+	<!--Nav and head-->
+	<span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+    <div class="top-nav-bar">
+        <div class="search-box">
+                <i class="fas fa-bars" id="menu-btn" onclick="openmenu()"></i>
+                <i class="fas fa-times" id="close-btn" onclick="closemenu()"></i>
+				<a href="Index.html"><img src="images/logo.png" class="logo"></a> 
+            <input type="text" class="form-control">
+            <span class="input-group-text"><i class="fas fa-search"></i>
+            </span>
+		</div>
+	
+        <div class="menu-bar">
+            <ul>
+                <li><a href="Cart.html"><i class="fas fa-shopping-basket"></i>cart</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log in</a></li>
+            </ul>
+        </div>
+    </div>
+ 	<!--Side nav-->
+    <section class="header">
+        <div class="side-menu" id="side-menu">
+            <ul>
+                <li><a href="Index.html">Home<i class="fas fa-angle-right"></i></a> 
+                </li>
+                <li><a href="Index.html#About">About Us <i class="fas fa-angle-right"></i></a></li>
+				<li><a href="Products.html">Products<i class="fas fa-angle-right"></i></a></li>
+				<li><a href="Cart.html">Cart<i class="fas fa-angle-right"></i></a></li>
+				<li><a href="ShippingDetails.html">Shipping<i class="fas fa-angle-right"></i></a></li>
+				<li>Log In / Register <i class="fas fa-angle-right"></i></li>
+				<li><a href="ContactUs.html">Contact Us<i class="fas fa-angle-right"></i></a></li>
+            </ul>
+        </div>
+	</section>
+<!---Products should be listed here-->
+<div class="row" class="store-items" id="store-items">
+			<div class="col-lg-4 col-sm-6 product-top store-item sweets" data-item="sweets"> 
+					<a href="Explorer.html"><img class="img-thumbnail mb-3" src="images/w1.jpg"></a>
+					<div class="overlay-right store-item-icon">
+							<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+									
+						<a onclick="myFunction()" class="add-to-cart" href="#" data-name="Explorer" data-price="11000"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+			</div>
+			<h3 class="item-detail"> Explorer</h3>
+			<h5 class="price">R11000</h5>
+
+			</div>
+			<div class="col-lg-4 col-sm-6 product-top img-container">
+				
+					<a href="Pilot.html"><img class="img-thumbnail mb-3" src="images/w3.jpg"></a>
+					<div class="overlay-right store-item-icon">
+							<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+									
+						<a onclick="myFunction()" class="add-to-cart" href="#" data-name="Pilot" data-price="2500"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+
+			</div>
+			<h3 class="item">Pilot</h3>
+			<h5 class="price">R2500</h5>
+			</div>
+			<div class="col-lg-4 col-sm-6 product-top">
+				
+					<a href="Organic.html"><img class="img-thumbnail mb-3" src="images/w2.jpg" ></a>
+					<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+									
+									<a onclick="myFunction()" class="add-to-cart" href="#" data-name="Organic" data-price="3000"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+
+			</div>
+			<h3 class="item">Organic</h3>
+			<h5 class="price">R3000</h5>
+			</div>
+			<div class="col-lg-4 col-sm-6 product-top">
+				
+					<a href="Rustic.html"><img class="img-thumbnail mb-3" src="images/w4.jpg"></a>
+					<div class="overlay-right">
+							<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+									
+									<a onclick="myFunction()" class="add-to-cart" href="#" data-name="Rustic" data-price="5000"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+
+			</div>
+			<h3 class="item">Rustic</h3>
+			<h5 class="price">R5000</h5>
+			</div>
+			<div class="col-lg-4 col-sm-6 product-top">
+				
+					<a href="WoodCas.html"><img class="img-thumbnail mb-3" src="images/w5.jpg"></a>
+					<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+									
+									<a onclick="myFunction()" class="add-to-cart" href="#" data-name="WoodCas" data-price="1000"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+
+			</div>
+			<h3 class="item">WoodCas</h3>
+			<h5 class="price">R1000</h5>
+			</div>
+			<div class="col-lg-4 col-sm-6 product-top">
+				
+					<a href="Motivated.html"><img class="img-thumbnail mb-3" src="images/w6.jpg"></a>
+					<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+									
+									<a onclick="myFunction()" class="add-to-cart" href="#" data-name="Motivated" data-price="2000"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+
+			</div>
+			<h3 class="item">Motivated</h3>
+			 <h5 class="price">
+			R2000</h5>
+			</div>
+			<div class="col-lg-4 col-sm-6 product-top">
+				
+					<a href="Sailor.html"><img class="img-thumbnail mb-3" src="images/w7.jpg"></a>
+					<div class="overlay-right">
+							<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+									
+									<a onclick="myFunction()" class="add-to-cart" href="#" data-name="Sailor" data-price="8000"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+
+			</div>
+			<h3 class="item">Sailor</h3>
+			<h5 class="price">R8000</h5>
+			</div>
+			<div class="col-lg-4 col-sm-6 product-top">
+				
+					<a href="RedMoon.html"><img class="img-thumbnail mb-3" src="images/w8.jpg"></a>
+					<div class="overlay-right">
+							<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+									
+									<a onclick="myFunction()" class="add-to-cart" href="#" data-name="RedMoon" data-price="1900"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+
+			</div>
+			<h3 class="item">RedMoon</h3>
+			<h5 class="price">R1900</h5>
+			</div>
+			<div class="col-lg-4 col-sm-6 product-top">
+				
+					<a href="JustPlain.html"><img class="img-thumbnail mb-3" src="images/w9.jpg"></a>
+					<div class="overlay-right">
+							<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+									
+									<a onclick="myFunction()" class="add-to-cart" href="#" data-name="JustPlain" data-price="800"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+
+			</div>
+			<h3 class="item">JustPlain</h3>
+			<h5 class="price">R800</h5>
+			</div>
+			<div class="col-lg-4 col-sm-6 product-top">
+				
+					<a href="Tiger.html"><img class="img-thumbnail mb-3" src="images/w10.jpg"></a>
+					<div class="overlay-right">
+							<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+									
+									<a onclick="myFunction()" class="add-to-cart" href="#" data-name="Tiger" data-price="2100"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+
+			</div>
+			<h3 class="item">Tiger</h3>
+			<h5 class="price">R2100</h5>
+			</div>
+			<div class="col-lg-4 col-sm-6 product-top">
+				
+					<a href="Maple.html"><img class="img-thumbnail mb-3" src="images/w11.jpg"></a>
+					<div class="overlay-right">
+							<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+									
+									<a onclick="myFunction()" class="add-to-cart" href="#" data-name="Maple" data-price="900"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+
+			</div>
+			<h3 class="item">Maple</h3>
+			<h5 class="price">R900</h5>
+			</div>
+			<div class="col-lg-4 col-sm-6 product-top">
+				
+					<a href="Smooth.html"><img class="img-thumbnail mb-3" src="images/w12.jpg"></a>
+					<div class="overlay-right">
+							<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+									
+									<a onclick="myFunction()" class="add-to-cart" href="#" data-name="Smooth" data-price="1000"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+
+			</div>
+			<h3 class="item">Smooth</h3>
+			<h5 class="price">R1000</h5>
+			</div>
+	</div>
+  <!--Side nav ends-->
+  
+<!----------------------------New Products------------->
+<section class="new-products">
+        <div class="container">
+                <div class="title-box">
+                    <h2>New Products</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product-top">
+                            <a href="Explorer.html">
+                      <img src="images/w1.jpg"></a>
+                      <div class="overlay-right">
+							<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+                          			
+                          			<a onclick="myFunction()" class="add-to-cart" href="#" data-name="Explorer" data-price="11000"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+                         
+                          
+                      </div>  
+                        </div>
+                        <div class="product-bottom text-center">
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+                                <h3 class="item">Explorer</h3>
+                                <h5 class="price">R11000</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                            <div class="product-top">
+                                <a href="Rustic.html">
+                          <img src="images/w4.jpg" height="250px"></a>
+                          <div class="overlay-right">
+								<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+                              			
+                              			<a onclick="myFunction()" class="add-to-cart" href="#" data-name="Rustic" data-price="5000"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+                              
+                              
+                              
+                          </div>  
+                            </div>
+                            <div class="product-bottom text-center">
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+                                    <h3 class="item">Rustic</h3>
+                                    <h5 class="price">R5000</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                                <div class="product-top">
+                              <img src="images/w6.jpg">
+                              <div class="overlay-right">
+									<button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart"></i></button>
+                                  			
+                                  			<a onclick="myFunction()" class="add-to-cart" href="#" data-name="Motivated" data-price="2000"><button type="button" class="btn btn-secondary Add" title="Add to cart"><i class="fa fa-shopping-cart "></i></button></a>
+                                
+
+                              </div>  
+                                </div>
+                                <div class="product-bottom text-center">
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+                                        <h3 class="item">Motivated</h3>
+                                        <h5 class="price">R2000</h5>
+                                </div>
+                            </div>
+                </div>
+                </div>
+            </div>
+</section>
+<div id="snackbar"  class="border-bottom-0">New Item Added<br>
+    Total :<span id="total-cart"></span></div>
+<!----footer-->
+<section class="footer">
+    <div class="container tex-center">
+        <div class="row">
+            <div class="col-md-3">
+                <h1>Useful Links</h1>
+                <p>Privacy Policy</p>
+                <p>Terms of use</p>
+                <p>Return Policy</p>
+                <p>Discount Coupons</p>
+            </div>
+            <div class="col-md-3">
+                    <h1>Company</h1>
+                    <a href="Index.html#About"><p>About Us</p></a>
+                    <a href="ContactUs.html"><p>Contact Us</p></a>
+                    <p>Careers</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-md-3">
+						<h1>Follow Us</h1>
+						<ul>
+					<p><a href="#" class="fa fa-facebook"></a></p>
+					<p><a href="#" class="fa fa-twitter"></a></p>
+					<p><a href="www.instagram.com" class="fa fa-instagram"></a></p>
+					</ul>
+                    </div>
+                    <div class="col-md-3 footer-image">
+                        <h1>Download App</h1>
+                        <img src="images/app.png">
+                    </div>
+        </div>
+        <hr>
+        <p class="copyright">Made By Shahiel <i class="far fa-copyright"></i></p>
+
+    </div>
+</section>
+    <script>
+        function openmenu(){
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-menu").style.display="none";
+            document.getElementById("close-menu").style.display="block";
+        }
+        function closemenu(){
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-menu").style.display="block";
+            document.getElementById("close-menu").style.display="none";
+        }
+    </script>
+
+<script type="text/javascript" src="scripts/Earthly.js"></script>  <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#calculator").hide();
+            });
+            $("#show").click(function(){
+                $("#calculator").show();
+            });
+        });
+        </script>
+  <script>
+          $(".add-to-cart").click(function(event){
+              event.preventDefault();
+              var name = $(this).attr("data-name");
+              var price = Number($(this).attr("data-price"));
+          
+              shoppingCart.addItemToCart(name, price, 1);
+              displayCart();
+          });
+          
+          $("#clear-cart").click(function(event){
+              shoppingCart.clearCart();
+              displayCart();
+          });
+          
+          function displayCart() {
+              var cartArray = shoppingCart.listCart();
+              console.log(cartArray);
+              var output = "";
+          
+                  for (var i in cartArray) {
+                      output += "<div>"
+                      +cartArray[i].name
+                      +" <input class='item-count' type='number' data-name='"
+                      +cartArray[i].name
+                      +"' value='"+cartArray[i].count+"' >"
+                      +" x "+cartArray[i].price
+                      +" = "+cartArray[i].total
+                      +" <button class='plus-item' data-name='"
+                      +cartArray[i].name+"'>+</button>"
+                      +" <button class='subtract-item' data-name='"
+                      +cartArray[i].name+"'>-</button>"
+                      +" <button class='delete-item' data-name='"
+                      +cartArray[i].name+"'>X</button>"
+                      +"</div>";
+                      }
+          
+                      $("#show-cart").html(output);
+                      $("#count-cart").html( shoppingCart.countCart() );
+                      $("#total-cart").html( shoppingCart.totalCart() );
+                  }
+          
+          $("#show-cart").on("click", ".delete-item", function(event){
+              var name = $(this).attr("data-name");
+              shoppingCart.removeItemFromCartAll(name);
+              displayCart();
+          });
+          
+          $("#show-cart").on("click", ".subtract-item", function(event){
+              var name = $(this).attr("data-name");
+              shoppingCart.removeItemFromCart(name);
+              displayCart();
+          });
+          
+          $("#show-cart").on("click", ".plus-item", function(event){
+              var name = $(this).attr("data-name");
+              shoppingCart.addItemToCart(name, 0, 1);
+              displayCart();
+          });
+          
+          $("#show-cart").on("change", ".item-count", function(event){
+              var name = $(this).attr("data-name");
+              var count = Number($(this).val());
+              shoppingCart.setCountForItem(name, count);
+              displayCart();
+          });
+          
+          
+              displayCart();
+  </script>
+  <script>
+          function myFunction() {
+              var x = document.getElementById("snackbar");
+              x.className = "show";
+              setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2000);
+          }
+  </script>
+  <script>
+      // Get all the keys from document
+var keys = document.querySelectorAll('#calculator span');
+var operators = ['+', '-', 'x', '÷'];
+var decimalAdded = false;
+
+// Add onclick event to all the keys and perform operations
+for(var i = 0; i < keys.length; i++) {
+	keys[i].onclick = function(e) {
+		// Get the input and button values
+		var input = document.querySelector('.screen');
+		var inputVal = input.innerHTML;
+		var btnVal = this.innerHTML;
+		
+		// Now, just append the key values (btnValue) to the input string and finally use javascript's eval function to get the result
+		// If clear key is pressed, erase everything
+		if(btnVal == 'C') {
+			input.innerHTML = '';
+			decimalAdded = false;
+		}
+		
+		// If eval key is pressed, calculate and display the result
+		else if(btnVal == '=') {
+			var equation = inputVal;
+			var lastChar = equation[equation.length - 1];
+			
+			// Replace all instances of x and ÷ with * and / respectively. This can be done easily using regex and the 'g' tag which will replace all instances of the matched character/substring
+			equation = equation.replace(/x/g, '*').replace(/÷/g, '/');
+			
+			// Final thing left to do is checking the last character of the equation. If it's an operator or a decimal, remove it
+			if(operators.indexOf(lastChar) > -1 || lastChar == '.')
+				equation = equation.replace(/.$/, '');
+			
+			if(equation)
+				input.innerHTML = eval(equation);
+				
+			decimalAdded = false;
+		}
+		
+		// Basic functionality of the calculator is complete. But there are some problems like 
+		// 1. No two operators should be added consecutively.
+		// 2. The equation shouldn't start from an operator except minus
+		// 3. not more than 1 decimal should be there in a number
+		
+		// We'll fix these issues using some simple checks
+		
+		// indexOf works only in IE9+
+		else if(operators.indexOf(btnVal) > -1) {
+			// Operator is clicked
+			// Get the last character from the equation
+			var lastChar = inputVal[inputVal.length - 1];
+			
+			// Only add operator if input is not empty and there is no operator at the last
+			if(inputVal != '' && operators.indexOf(lastChar) == -1) 
+				input.innerHTML += btnVal;
+			
+			// Allow minus if the string is empty
+			else if(inputVal == '' && btnVal == '-') 
+				input.innerHTML += btnVal;
+			
+			// Replace the last operator (if exists) with the newly pressed operator
+			if(operators.indexOf(lastChar) > -1 && inputVal.length > 1) {
+				// Here, '.' matches any character while $ denotes the end of string, so anything (will be an operator in this case) at the end of string will get replaced by new operator
+				input.innerHTML = inputVal.replace(/.$/, btnVal);
+			}
+			
+			decimalAdded =false;
+		}
+		
+		// Now only the decimal problem is left. We can solve it easily using a flag 'decimalAdded' which we'll set once the decimal is added and prevent more decimals to be added once it's set. It will be reset when an operator, eval or clear key is pressed.
+		else if(btnVal == '.') {
+			if(!decimalAdded) {
+				input.innerHTML += btnVal;
+				decimalAdded = true;
+			}
+		}
+		
+		// if any other key is pressed, just append it
+		else {
+			input.innerHTML += btnVal;
+		}
+		
+		// prevent page jumps
+		e.preventDefault();
+	} 
+}
+  </script>
+</body>
+</html>
